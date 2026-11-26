@@ -1,0 +1,17 @@
+Agentes de AI
+
+Agentes vs Chatbot llm
+    Agentes de AI: utilizam modelos de linguagem para decidir ações e executar tarefas,
+    geralmente utilizando ferramentas
+
+    Chatbot com LLM: utiliza um modelo de linguagem para interpretar perguntas e
+     gerar respostas(Não tem ferramentas).
+
+ReAct Agents 
+A ideia de um react agent é raciocinar -> executar -> analisar -> responder.
+O fluxo geralmente é assim:
+
+            raciocinar -> executar -> analisar -> responder
+                ^                         |
+                |_________________________v
+

@@ -1,0 +1,19 @@
+O langGraph é uma lib usada para criar e coordenar llms complexos
+
+Principais ferramentas do langGraph:
+    [1] RAG - Geração Aumentada de Recuperação
+
+    O RAG é uma ferramenta que permite consultar dados externos e enviar esses dados
+    para o llm.
+
+    Imagine uma chatbot que tira duvidas de alunos ou funcionários de uma instituição.
+    O processo de rag transforma documentos em vetores e adiciona num banco de dados vetorial,
+    o rag consulta a pergunta no banco de dados vetorial e traz de volta algumas sitações 
+    da pergunta, essas sitações são enviadas para o llm que decide como responder.
+
+    [2] APIs do langGraph
+    
+
+    [3] LangSimth
+    Ferramenta para fazer testes
+

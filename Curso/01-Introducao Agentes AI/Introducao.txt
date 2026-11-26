@@ -1,0 +1,39 @@
+Agentes de AI
+
+Um Agente é um sistema de AI, que pode realizar operações autonomas, 
+possui memória persistente e integração com ferramentas externas. 
+Seu processo de decisão é baseado em percepção e raciocínio avançado.
+
+Caracteristicas:
+    [1] Capacidade de aprendizado e adaptação
+    [2] integração com ferramentas externas
+    [3] Capacidade de memória e raciocínio
+    [4] Processo de decisão autonomo
+    [5] Executa varias ações em resposta a um único comando
+
+Os agentes são treinados com dados para responder a situações especificas, por exemplo,
+um agente academico tem em sua base da dados os documentos da instituição para 
+tirar duvidas de um aluno baseado naquele material.
+
+Tipos de Agente
+
+[1] Agente de reflexo simples
+    > operações baseada em regras pré definidas.
+    > sem memória.
+
+[2] Agente reflexivo baseado em modelos
+    > Considera o historico de percepções e o estado atual.
+    > Toma decisões mais sofisiticadas, avalia consequencias antes de agir.
+    > um exemplo é a AI de jogos.
+
+[3] Agentes de aprendizagem
+    > Aprende continuamente com experiências anteriores para melhorar seus resultados.
+    > Exemplo: filtro de spam
+
+[4] Agente baseado em utilidade
+
+[5] Agente hierarquico
+
+[6] Agentes robóticos
+
+

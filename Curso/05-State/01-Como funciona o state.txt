@@ -1,0 +1,67 @@
+Como funciona o state de um grafo ?
+
+    [1] O estado (state) funciona como um quadro branco, cada node recebe o quadro e o lê por
+    completo. 
+
+    [2] O node devolve o quadro com a alteração que ele fez (o resto permanece igual).
+
+    [3] O langGraph (por meio do reducer) aplica a alteração.
+
+Cada chave do State é um canal e tem sua propria regra:
+
+    class Estado(TypeDict):
+        pergunta : str
+        passos : int
+        documentos : Annotated[list[str],opperator.add]
+        mensagens: Annotated[list,add_messages]
+
+No exemplo a cima cada chave tem sua regra:
+    [1] Pergunta e passos são sobrescritos
+    [2] documentos e mensagens usam Annotated, então eles usam um reducer.
+    [3] O reducer 'soma' o antigo e o novo conteudo
+
+Exemplo de como a alteração de um node + reducer funciona:
+
+    def busca(state):
+        novos = ['docs3']
+        return {'documentos' : state['documentos'] + novos}
+    
+    # Essa é a maneira errada de fazer, com o reducer o retorno seria:
+    # Antes =  ['doc1', 'doc2']
+    # Depois = ['doc1', 'doc2','doc1', 'doc2','doc3']
+
+Maneira certa de fazer:
+
+    def busca(state):
+        novos = ['docs3']
+        return {'documentos' : novos}
+
+    A saída passa a ser: 
+    ['doc1', 'doc2','doc3']
+
+Por isso a regra de cada node retorna apenas a alteração que fez.
+
+O Annotated também pode ser usado para controle de informações simultaneas, quando dois nodes executam em paralelo,
+sem o Annotated os dois retornos que apontassem para a mesma chave causariam um erro.
+
+Tipos de declaração de Estado
+[1] TypeDict
+    > Acesso no node: state['campo']
+    > Custo: Minimo (Só valida no final)
+    > Qunado usar? Padrão para maioria dos grafos
+
+[2] Pydantic
+    > Acesso no node: state.campo
+    > Custo: Validação a cada node
+    > Qunado usar? Dados vindos de user e API
+
+[3] DataClass
+    > Acesso no node: state.campo
+    > Custo: Baixo
+    > Qunado usar? Quando quer defaults sem Pydantic
+
+
+
+
+
+

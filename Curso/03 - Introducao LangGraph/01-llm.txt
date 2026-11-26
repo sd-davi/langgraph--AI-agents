@@ -1,0 +1,42 @@
+llm significa Large Language Model, ou Modelo de Linguagem de Grande Escala.
+
+    Podem ser construidas/treinadas AI para diversas funções, como:
+        > Adversário em jogos (xadrez, futebol, corrida e etc)
+        > Chatbot
+        > Identificar imagens
+        > Robô motorista
+    
+    O llm é um robô treinado com uma enorme quantidade de texto, para aprender padrões de
+    linguagem, relação entre as palavras, conceitos e contextos.
+
+    Quando alguem pergunta: " Explique sobre programação" o llm utiliza seu treinamento para
+    construir uma resposta coerente.
+
+    Em outras palavras, o LLM é o modelo de AI treinado para compreender e gerar linguagem humana.
+
+    Qual a diferença entre LLM e ChatGPT e outras AI ?
+
+        O ChatGPT é uma aplicação de AI, ele utiliza llm para conversar com o usuário mas não apenas isso, ele tem:
+        > Memória
+        > Ferramentas
+        > Análise de arquivos
+        > Geração de imagens
+        > Execução de tarefas e 
+
+Para guardar na cabeça
+
+Conceito	        Significado
+
+IA	                Campo amplo da Inteligência Artificial
+LLM	                Modelo de IA especializado em linguagem
+ChatGPT	            Aplicação que utiliza modelos de IA e outras tecnologias
+LangChain	        Framework para construir aplicações com LLMs
+Agente de IA	    Sistema que pode utilizar um modelo, ferramentas e tomar decisões para executar tarefas
+
+Uma última analogia:
+- IA é o universo dos robôs inteligentes.
+- LLM é o cérebro especializado em linguagem.
+- ChatGPT é o robô completo, com cérebro, ferramentas e interface.
+- LangChain é uma das caixas de ferramentas que um programador pode utilizar para construir seu próprio robô.
+
+
